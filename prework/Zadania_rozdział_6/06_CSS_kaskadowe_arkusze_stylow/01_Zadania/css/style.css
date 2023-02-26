@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 20px;
-  background-color: #eee;
-}
+  background-color: darkgoldenrod;
+ }
 
 .book {
   background: #fff;
@@ -10,7 +14,7 @@ body {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   color: #555;
   border: 3px solid #885a35;
-  max-width: 800px;
+  max-width: 700px;
   line-height: 1.4em;
 }
 
@@ -19,12 +23,19 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   font-size: 3rem;
+  text-align: center;
+}
+
+.book-content {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .book-content img {
-  float: right;
-  margin: 0 0 30px 30px;
-}
+  display: block;
+  margin: 0 auto;
+  }
 
 .book-content p:first-of-type::first-letter {
   float: left;
@@ -33,7 +44,7 @@ body {
   margin: 0 30px 0 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .book {
     margin: 10px;
     padding: 30px;
@@ -47,6 +58,7 @@ body {
   .book-content {
     display: flex;
     flex-direction: column;
+    text-align: justify;
   }
 
   .book-content img {
@@ -54,10 +66,10 @@ body {
     float: none;
     margin: 0;
     margin-bottom: 30px;
-    order: 1;
+    order: 0;
   }
 }
-
+ 
 @media (max-width: 600px) {
   body {
     margin: 0;
