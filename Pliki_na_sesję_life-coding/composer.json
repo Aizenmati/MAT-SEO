@@ -1,0 +1,15 @@
+{
+    "name": "coderslab/seo-php-introduction",
+    "description": "A few examples of PHP components.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Kosiński",
+            "email": "piotr.kosinski@coderslab.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {}
+}
